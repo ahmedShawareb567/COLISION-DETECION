@@ -1,0 +1,22 @@
+@mixin all {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+}
+html{
+    font: normal 1rem sans-serif;
+}
+body{
+    @include all;
+    canvas{
+        position:absolute;
+        top: 0rem;
+        left: 0rem;
+        max-width: 100%;
+        cursor: pointer;
+        background-color: #fdfffc;
+    }
+}
